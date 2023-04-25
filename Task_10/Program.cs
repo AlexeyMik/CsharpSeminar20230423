@@ -3,5 +3,14 @@
 // будм считать, что вторую слева, хоты для трехзначного числа это равносильно
 // второму срава)
 Console.Write("Введите трехзначное натуральое число: ");
-int i= Convert.ToInt32(Console.Read());
-Console.Write($"Введено число: {i}");
+int i = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Введено число: {i}");
+if (i > 100 && i < 1000)
+{
+    int j=(i/10)%10;
+    Console.WriteLine($"Вторая слева цифра числа {i} равна {j}");
+}
+else
+{
+    Console.WriteLine($"Введено число {i} не является трехзначным");
+}
